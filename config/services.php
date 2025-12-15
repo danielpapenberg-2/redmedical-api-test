@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    'red_portal' => [
+        'enabled' => env('RED_PORTAL_ENABLED', false),
+        'base_url' => env('RED_PORTAL_BASE_URL', 'https://localhost:3000'),
+        'client_id' => env('RED_PORTAL_CLIENT_ID', 'Fun'),
+        'client_secret' => env('RED_PORTAL_CLIENT_SECRET', '=work@red'),
+        'ssl_cert' => env('RED_PORTAL_SSL_CERT', base_path('ssl_cert.pem')),
+    ],
 ];

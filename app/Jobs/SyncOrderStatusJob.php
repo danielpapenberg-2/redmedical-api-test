@@ -55,7 +55,7 @@ class SyncOrderStatusJob implements ShouldQueue
 
         if ($order->status !== 'completed') {
             self::dispatch($order->id)
-                ->delay(now()->addMinutes(2));
+                ->delay(now()->addMinutes(1));
         }
     }
 }
